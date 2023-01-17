@@ -18,6 +18,9 @@
             var a = 1;
             var b = 1;
             var c = 0;
+            var audio = new Audio("sounds/laser2.mp3");
+            var audio2 = new Audio("sounds/bomb.mp3");
+            var audio3 = new Audio("sounds/powerup10.mp3");
             function next() 
             {
                 if (level == 0)
@@ -215,6 +218,7 @@
                             Asteroid[i].height = 0;
                             Asteroid[i].y = 900;
                             Health -= 1;
+                            audio2.play();
                         } 
                     }
                     for (i = 0; i < Enemy1.length; i += 1) 
@@ -225,6 +229,7 @@
                             Enemy1[i].height = 0;
                             Enemy1[i].y = 900;
                             Health -= 1;
+                            audio2.play();
                         } 
                     }
                     for (i = 0; i < Bullet_Enemy1.length; i += 1) 
@@ -235,6 +240,7 @@
                             Bullet_Enemy1[i].height = 0;
                             Bullet_Enemy1[i].y = 900;
                             Health -= 1;
+                            audio2.play();
                         } 
                     }
                     for (i = 0; i < Enemy2.length; i += 1) 
@@ -245,6 +251,7 @@
                             Enemy2[i].height = 0;
                             Enemy2[i].y = 900;
                             Health -= 1;
+                            audio2.play();
                         } 
                     }
                     for (i = 0; i < Bullet_Enemy2.length; i += 1) 
@@ -255,6 +262,7 @@
                             Bullet_Enemy2[i].height = 0;
                             Bullet_Enemy2[i].y = 900;
                             Health -= 1;
+                            audio2.play();
                         } 
                     }
                     for (i = 0; i < Enemy3.length; i += 1) 
@@ -265,6 +273,7 @@
                             Enemy3[i].height = 0;
                             Enemy3[i].y = 900;
                             Health -= 1;
+                            audio2.play();
                         } 
                     }
                     for (i = 0; i < Enemy4.length; i += 1) 
@@ -275,6 +284,7 @@
                             Enemy4[i].height = 0;
                             Enemy4[i].y = 900;
                             Health -= 2;
+                            audio2.play();
                         } 
                     }
                     for (i = 0; i < Enemy5.length; i += 1) 
@@ -285,6 +295,7 @@
                             Enemy5[i].height = 0;
                             Enemy5[i].y = 900;
                             Health -= 2;
+                            audio2.play();
                         } 
                     }
                     for (i = 0; i < Enemy6.length; i += 1) 
@@ -295,6 +306,7 @@
                             Enemy6[i].height = 0;
                             Enemy6[i].y = 900;
                             Health -= 3;
+                            audio2.play();
                         } 
                     }
                     for (i = 0; i < Bullet_Enemy3_1.length; i += 1) 
@@ -305,6 +317,7 @@
                             Bullet_Enemy3_1[i].height = 0;
                             Bullet_Enemy3_1[i].y = 900;
                             Health -= 1;
+                            audio2.play();
                         } 
                     }
                     for (i = 0; i < Bullet_Enemy3.length; i += 1) 
@@ -315,6 +328,7 @@
                             Bullet_Enemy3[i].height = 0;
                             Bullet_Enemy3[i].y = 900;
                             Health -= 1;
+                            audio2.play();
                         } 
                     }
                     for (i = 0; i < Bullet_Enemy3_2.length; i += 1) 
@@ -325,6 +339,7 @@
                             Bullet_Enemy3_2[i].height = 0;
                             Bullet_Enemy3_2[i].y = 900;
                             Health -= 1;
+                            audio2.play();
                         } 
                     }
                     for (i = 0; i < Bullet_Enemy4.length; i += 1) 
@@ -335,6 +350,7 @@
                             Bullet_Enemy4[i].height = 0;
                             Bullet_Enemy4[i].y = 900;
                             Health -= 2;
+                            audio2.play();
                         } 
                     }
                     for (i = 0; i < Bullet_Enemy5.length; i += 1) 
@@ -345,6 +361,7 @@
                             Bullet_Enemy5[i].height = 0;
                             Bullet_Enemy5[i].y = 900;
                             Health -= 2;
+                            audio2.play();
                         } 
                     }
                     for (i = 0; i < Bullet_Enemy6.length; i += 1) 
@@ -355,6 +372,7 @@
                             Bullet_Enemy6[i].height = 0;
                             Bullet_Enemy6[i].y = 900;
                             Health -= 2;
+                            audio2.play();
                         } 
                     }
                     for (i = 0; i < Death.length; i += 1) 
@@ -387,6 +405,7 @@
                             Addhealth[i].height = 0;
                             Addhealth[i].y = 900;
                             Health += 1;
+                            audio3.play();
                         } 
                     }
                     //沒血
@@ -406,6 +425,7 @@
                             Treasure1[i].height = 0;
                             Treasure1[i].y = 900;
                             Ammo += 1;
+                            audio3.play();
                         } 
                     }
                     for (i = 0; i < Treasure2.length; i += 1) 
@@ -416,6 +436,7 @@
                             Treasure2[i].height = 0;
                             Treasure2[i].y = 900;
                             Fast += 1;
+                            audio3.play();
                         } 
                     }
                     for (i = 0; i < Treasure3.length; i += 1) 
@@ -426,6 +447,7 @@
                             Treasure3[i].height = 0;
                             Treasure3[i].y = 900;
                             Shield += 1;
+                            audio3.play();
                         } 
                     }
                     //子彈碰撞
@@ -444,6 +466,7 @@
                                 Asteroid[j].height = 0;
                                 Asteroid[j].y = 900;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                         }
                     //Enemy1
@@ -458,6 +481,7 @@
                                 Enemy1[j].height = 0;
                                 Enemy1[j].y = 900;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy1
@@ -471,6 +495,7 @@
                                 Bullet_Enemy1[j].width = 0;
                                 Bullet_Enemy1[j].height = 0;
                                 Bullet_Enemy1[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Enemy2
@@ -485,6 +510,7 @@
                                 Enemy2[j].height = 0;
                                 Enemy2[j].y = 900;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy2
@@ -498,6 +524,7 @@
                                 Bullet_Enemy2[j].width = 0;
                                 Bullet_Enemy2[j].height = 0;
                                 Bullet_Enemy2[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Enemy3
@@ -512,6 +539,7 @@
                                 Enemy3[j].height = 0;
                                 Enemy3[j].y = 900;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy3_1
@@ -525,6 +553,7 @@
                                 Bullet_Enemy3_1[j].width = 0;
                                 Bullet_Enemy3_1[j].height = 0;
                                 Bullet_Enemy3_1[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy3
@@ -538,6 +567,7 @@
                                 Bullet_Enemy3[j].width = 0;
                                 Bullet_Enemy3[j].height = 0;
                                 Bullet_Enemy3[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy3_2
@@ -551,6 +581,7 @@
                                 Bullet_Enemy3_2[j].width = 0;
                                 Bullet_Enemy3_2[j].height = 0;
                                 Bullet_Enemy3_2[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Enemy4
@@ -564,6 +595,7 @@
                                 if (Enemy4h[j] > 0)
                                 {
                                     Enemy4h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -585,6 +617,7 @@
                                 if (Bullet_Enemy4h[j] > 0)
                                 {
                                     Bullet_Enemy4h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -605,6 +638,7 @@
                                 if (Enemy5h[j] > 0)
                                 {
                                     Enemy5h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -628,6 +662,7 @@
                                 if (Bullet_Enemy5h[j] > 0)
                                 {
                                     Bullet_Enemy5h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -648,6 +683,7 @@
                                 if (Enemy6h[j] > 0)
                                 {
                                     Enemy6h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -669,6 +705,7 @@
                                 if (Bullet_Enemy6h[j] > 0)
                                 {
                                     Bullet_Enemy6h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -685,6 +722,7 @@
                                 Bullet[i].width = 0;
                                 Bullet[i].height = 0;
                                 Bullet[i].y = -500;
+                                audio.play();
                             }
                         }
                     //Boss──1
@@ -695,6 +733,7 @@
                                 Bullet[i].y = -500;
                                 BossH1 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──2
                             if (Bullet[i].collision(Boss2)) 
@@ -704,6 +743,7 @@
                                 Bullet[i].y = -500;
                                 BossH2 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──3
                             if (Bullet[i].collision(Boss3)) 
@@ -713,6 +753,7 @@
                                 Bullet[i].y = -500;
                                 BossH3 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──4
                             if (Bullet[i].collision(Boss4)) 
@@ -722,6 +763,7 @@
                                 Bullet[i].y = -500;
                                 BossH4 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──5
                             if (Bullet[i].collision(Boss5)) 
@@ -731,6 +773,7 @@
                                 Bullet[i].y = -500;
                                 BossH5 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──6
                             if (Bullet[i].collision(Boss6)) 
@@ -740,6 +783,7 @@
                                 Bullet[i].y = -500;
                                 BossH6 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──7
                             if (Bullet[i].collision(Boss7)) 
@@ -749,6 +793,7 @@
                                 Bullet[i].y = -500;
                                 BossH7 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──8
                             if (Bullet[i].collision(Boss8)) 
@@ -758,6 +803,7 @@
                                 Bullet[i].y = -500;
                                 BossH8 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──9
                             if (Bullet[i].collision(Boss9)) 
@@ -767,6 +813,7 @@
                                 Bullet[i].y = -500;
                                 BossH9 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──10
                             if (Bullet[i].collision(Boss10)) 
@@ -776,6 +823,7 @@
                                 Bullet[i].y = -500;
                                 BossH10 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──11
                             if (Bullet[i].collision(Boss11)) 
@@ -785,12 +833,14 @@
                                 Bullet[i].y = -500;
                                 BossH11 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //TreasureMaker
                         for(j = 0; j < TreasureMaker.length; j += 1)
                         {
                             if (Bullet[i].collision(TreasureMaker[j])) 
                             {
+                                audio.play();
                                 Bullet[i].width = 0;
                                 Bullet[i].height = 0;
                                 Bullet[i].y = -500;
@@ -818,6 +868,7 @@
                                 Asteroid[j].height = 0;
                                 Asteroid[j].y = 900;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                         }
                     //Enemy1
@@ -832,6 +883,7 @@
                                 Enemy1[j].height = 0;
                                 Enemy1[j].y = 900;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy1
@@ -845,6 +897,7 @@
                                 Bullet_Enemy1[j].width = 0;
                                 Bullet_Enemy1[j].height = 0;
                                 Bullet_Enemy1[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Enemy2
@@ -859,6 +912,7 @@
                                 Enemy2[j].height = 0;
                                 Enemy2[j].y = 900;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy2
@@ -872,6 +926,7 @@
                                 Bullet_Enemy2[j].width = 0;
                                 Bullet_Enemy2[j].height = 0;
                                 Bullet_Enemy2[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Enemy3
@@ -886,6 +941,7 @@
                                 Enemy3[j].height = 0;
                                 Enemy3[j].y = 900;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy3_1
@@ -899,6 +955,7 @@
                                 Bullet_Enemy3_1[j].width = 0;
                                 Bullet_Enemy3_1[j].height = 0;
                                 Bullet_Enemy3_1[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy3
@@ -912,6 +969,7 @@
                                 Bullet_Enemy3[j].width = 0;
                                 Bullet_Enemy3[j].height = 0;
                                 Bullet_Enemy3[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy3_2
@@ -925,6 +983,7 @@
                                 Bullet_Enemy3_2[j].width = 0;
                                 Bullet_Enemy3_2[j].height = 0;
                                 Bullet_Enemy3_2[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Enemy4
@@ -938,6 +997,7 @@
                                 if (Enemy4h[j] > 0)
                                 {
                                     Enemy4h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -959,6 +1019,7 @@
                                 if (Bullet_Enemy4h[j] > 0)
                                 {
                                     Bullet_Enemy4h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -979,6 +1040,7 @@
                                 if (Enemy5h[j] > 0)
                                 {
                                     Enemy5h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1002,6 +1064,7 @@
                                 if (Bullet_Enemy5h[j] > 0)
                                 {
                                     Bullet_Enemy5h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1022,6 +1085,7 @@
                                 if (Enemy6h[j] > 0)
                                 {
                                     Enemy6h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1043,6 +1107,7 @@
                                 if (Bullet_Enemy6h[j] > 0)
                                 {
                                     Bullet_Enemy6h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1059,6 +1124,7 @@
                                 Bullet1[i].width = 0;
                                 Bullet1[i].height = 0;
                                 Bullet1[i].y = -500;
+                                audio.play();
                             }
                         }
                     //Boss──1
@@ -1069,6 +1135,7 @@
                                 Bullet1[i].y = -500;
                                 BossH1 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──2
                             if (Bullet1[i].collision(Boss2)) 
@@ -1078,6 +1145,7 @@
                                 Bullet1[i].y = -500;
                                 BossH2 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──3
                             if (Bullet1[i].collision(Boss3)) 
@@ -1087,6 +1155,7 @@
                                 Bullet1[i].y = -500;
                                 BossH3 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──4
                             if (Bullet1[i].collision(Boss4)) 
@@ -1096,6 +1165,7 @@
                                 Bullet1[i].y = -500;
                                 BossH4 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──5
                             if (Bullet1[i].collision(Boss5)) 
@@ -1105,6 +1175,7 @@
                                 Bullet1[i].y = -500;
                                 BossH5 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──6
                             if (Bullet1[i].collision(Boss6)) 
@@ -1114,6 +1185,7 @@
                                 Bullet1[i].y = -500;
                                 BossH6 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──7
                             if (Bullet1[i].collision(Boss7)) 
@@ -1123,6 +1195,7 @@
                                 Bullet1[i].y = -500;
                                 BossH7 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──8
                             if (Bullet1[i].collision(Boss8)) 
@@ -1132,6 +1205,7 @@
                                 Bullet1[i].y = -500;
                                 BossH8 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──9
                             if (Bullet1[i].collision(Boss9)) 
@@ -1141,6 +1215,7 @@
                                 Bullet1[i].y = -500;
                                 BossH9 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──10
                             if (Bullet1[i].collision(Boss10)) 
@@ -1150,6 +1225,7 @@
                                 Bullet1[i].y = -500;
                                 BossH10 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──11
                             if (Bullet1[i].collision(Boss11)) 
@@ -1159,12 +1235,14 @@
                                 Bullet1[i].y = -500;
                                 BossH11 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //TreasureMaker
                         for(j = 0; j < TreasureMaker.length; j += 1)
                         {
                             if (Bullet1[i].collision(TreasureMaker[j])) 
                             {
+                                audio.play();
                                 Bullet1[i].width = 0;
                                 Bullet1[i].height = 0;
                                 Bullet1[i].y = -500;
@@ -1192,6 +1270,7 @@
                                 Asteroid[j].height = 0;
                                 Asteroid[j].y = 900;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                         }
                     //Enemy1
@@ -1206,6 +1285,7 @@
                                 Enemy1[j].height = 0;
                                 Enemy1[j].y = 900;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy1
@@ -1219,6 +1299,7 @@
                                 Bullet_Enemy1[j].width = 0;
                                 Bullet_Enemy1[j].height = 0;
                                 Bullet_Enemy1[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Enemy2
@@ -1233,6 +1314,7 @@
                                 Enemy2[j].height = 0;
                                 Enemy2[j].y = 900;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy2
@@ -1246,6 +1328,7 @@
                                 Bullet_Enemy2[j].width = 0;
                                 Bullet_Enemy2[j].height = 0;
                                 Bullet_Enemy2[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Enemy3
@@ -1260,6 +1343,7 @@
                                 Enemy3[j].height = 0;
                                 Enemy3[j].y = 900;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy3_1
@@ -1273,6 +1357,7 @@
                                 Bullet_Enemy3_1[j].width = 0;
                                 Bullet_Enemy3_1[j].height = 0;
                                 Bullet_Enemy3_1[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy3
@@ -1286,6 +1371,7 @@
                                 Bullet_Enemy3[j].width = 0;
                                 Bullet_Enemy3[j].height = 0;
                                 Bullet_Enemy3[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy3_2
@@ -1299,6 +1385,7 @@
                                 Bullet_Enemy3_2[j].width = 0;
                                 Bullet_Enemy3_2[j].height = 0;
                                 Bullet_Enemy3_2[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Enemy4
@@ -1312,6 +1399,7 @@
                                 if (Enemy4h[j] > 0)
                                 {
                                     Enemy4h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1333,6 +1421,7 @@
                                 if (Bullet_Enemy4h[j] > 0)
                                 {
                                     Bullet_Enemy4h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1353,6 +1442,7 @@
                                 if (Enemy5h[j] > 0)
                                 {
                                     Enemy5h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1376,6 +1466,7 @@
                                 if (Bullet_Enemy5h[j] > 0)
                                 {
                                     Bullet_Enemy5h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1396,6 +1487,7 @@
                                 if (Enemy6h[j] > 0)
                                 {
                                     Enemy6h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1417,6 +1509,7 @@
                                 if (Bullet_Enemy6h[j] > 0)
                                 {
                                     Bullet_Enemy6h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1433,6 +1526,7 @@
                                 Bullet2[i].width = 0;
                                 Bullet2[i].height = 0;
                                 Bullet2[i].y = -500;
+                                audio.play();
                             }
                         }
                     //Boss──1
@@ -1443,6 +1537,7 @@
                                 Bullet2[i].y = -500;
                                 BossH1 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──2
                             if (Bullet2[i].collision(Boss2)) 
@@ -1452,6 +1547,7 @@
                                 Bullet2[i].y = -500;
                                 BossH2 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──3
                             if (Bullet2[i].collision(Boss3)) 
@@ -1461,6 +1557,7 @@
                                 Bullet2[i].y = -500;
                                 BossH3 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──4
                             if (Bullet2[i].collision(Boss4)) 
@@ -1470,6 +1567,7 @@
                                 Bullet2[i].y = -500;
                                 BossH4 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──5
                             if (Bullet2[i].collision(Boss5)) 
@@ -1479,6 +1577,7 @@
                                 Bullet2[i].y = -500;
                                 BossH5 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──6
                             if (Bullet2[i].collision(Boss6)) 
@@ -1488,6 +1587,7 @@
                                 Bullet2[i].y = -500;
                                 BossH6 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──7
                             if (Bullet2[i].collision(Boss7)) 
@@ -1497,6 +1597,7 @@
                                 Bullet2[i].y = -500;
                                 BossH7 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──8
                             if (Bullet2[i].collision(Boss8)) 
@@ -1506,6 +1607,7 @@
                                 Bullet2[i].y = -500;
                                 BossH8 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──9
                             if (Bullet2[i].collision(Boss9)) 
@@ -1515,6 +1617,7 @@
                                 Bullet2[i].y = -500;
                                 BossH9 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──10
                             if (Bullet2[i].collision(Boss10)) 
@@ -1524,6 +1627,7 @@
                                 Bullet2[i].y = -500;
                                 BossH10 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──11
                             if (Bullet2[i].collision(Boss11)) 
@@ -1533,12 +1637,14 @@
                                 Bullet2[i].y = -500;
                                 BossH11 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //TreasureMaker
                         for(j = 0; j < TreasureMaker.length; j += 1)
                         {
                             if (Bullet2[i].collision(TreasureMaker[j])) 
                             {
+                                audio.play();
                                 Bullet2[i].width = 0;
                                 Bullet2[i].height = 0;
                                 Bullet2[i].y = -500;
@@ -1566,6 +1672,7 @@
                                 Asteroid[j].height = 0;
                                 Asteroid[j].y = 900;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                         }
                     //Enemy1
@@ -1580,6 +1687,7 @@
                                 Enemy1[j].height = 0;
                                 Enemy1[j].y = 900;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy1
@@ -1593,6 +1701,7 @@
                                 Bullet_Enemy1[j].width = 0;
                                 Bullet_Enemy1[j].height = 0;
                                 Bullet_Enemy1[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Enemy2
@@ -1607,6 +1716,7 @@
                                 Enemy2[j].height = 0;
                                 Enemy2[j].y = 900;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy2
@@ -1620,6 +1730,7 @@
                                 Bullet_Enemy2[j].width = 0;
                                 Bullet_Enemy2[j].height = 0;
                                 Bullet_Enemy2[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Enemy3
@@ -1634,6 +1745,7 @@
                                 Enemy3[j].height = 0;
                                 Enemy3[j].y = 900;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy3_1
@@ -1647,6 +1759,7 @@
                                 Bullet_Enemy3_1[j].width = 0;
                                 Bullet_Enemy3_1[j].height = 0;
                                 Bullet_Enemy3_1[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy3
@@ -1660,6 +1773,7 @@
                                 Bullet_Enemy3[j].width = 0;
                                 Bullet_Enemy3[j].height = 0;
                                 Bullet_Enemy3[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Bullet_Enemy3_2
@@ -1673,6 +1787,7 @@
                                 Bullet_Enemy3_2[j].width = 0;
                                 Bullet_Enemy3_2[j].height = 0;
                                 Bullet_Enemy3_2[j].y = 900;
+                                audio.play();
                             }
                         }
                     //Enemy4
@@ -1686,6 +1801,7 @@
                                 if (Enemy4h[j] > 0)
                                 {
                                     Enemy4h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1707,6 +1823,7 @@
                                 if (Bullet_Enemy4h[j] > 0)
                                 {
                                     Bullet_Enemy4h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1727,6 +1844,7 @@
                                 if (Enemy5h[j] > 0)
                                 {
                                     Enemy5h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1750,6 +1868,7 @@
                                 if (Bullet_Enemy5h[j] > 0)
                                 {
                                     Bullet_Enemy5h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1770,6 +1889,7 @@
                                 if (Enemy6h[j] > 0)
                                 {
                                     Enemy6h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1791,6 +1911,7 @@
                                 if (Bullet_Enemy6h[j] > 0)
                                 {
                                     Bullet_Enemy6h[j] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1807,6 +1928,7 @@
                                 Bullet3[i].width = 0;
                                 Bullet3[i].height = 0;
                                 Bullet3[i].y = -500;
+                                audio.play();
                             }
                         }
                     //Boss──1
@@ -1817,6 +1939,7 @@
                                 Bullet3[i].y = -500;
                                 BossH1 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──2
                             if (Bullet3[i].collision(Boss2)) 
@@ -1826,6 +1949,7 @@
                                 Bullet3[i].y = -500;
                                 BossH2 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──3
                             if (Bullet3[i].collision(Boss3)) 
@@ -1835,6 +1959,7 @@
                                 Bullet3[i].y = -500;
                                 BossH3 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──4
                             if (Bullet3[i].collision(Boss4)) 
@@ -1844,6 +1969,7 @@
                                 Bullet3[i].y = -500;
                                 BossH4 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──5
                             if (Bullet3[i].collision(Boss5)) 
@@ -1853,6 +1979,7 @@
                                 Bullet3[i].y = -500;
                                 BossH5 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──6
                             if (Bullet3[i].collision(Boss6)) 
@@ -1862,6 +1989,7 @@
                                 Bullet3[i].y = -500;
                                 BossH6 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──7
                             if (Bullet3[i].collision(Boss7)) 
@@ -1871,6 +1999,7 @@
                                 Bullet3[i].y = -500;
                                 BossH7 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──8
                             if (Bullet3[i].collision(Boss8)) 
@@ -1880,6 +2009,7 @@
                                 Bullet3[i].y = -500;
                                 BossH8 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──9
                             if (Bullet3[i].collision(Boss9)) 
@@ -1889,6 +2019,7 @@
                                 Bullet3[i].y = -500;
                                 BossH9 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──10
                             if (Bullet3[i].collision(Boss10)) 
@@ -1898,6 +2029,7 @@
                                 Bullet3[i].y = -500;
                                 BossH10 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //Boss──11
                             if (Bullet3[i].collision(Boss11)) 
@@ -1907,12 +2039,14 @@
                                 Bullet3[i].y = -500;
                                 BossH11 -= 1;
                                 GameArea.nowscore += 1;
+                                audio.play();
                             }
                     //TreasureMaker
                         for(j = 0; j < TreasureMaker.length; j += 1)
                         {
                             if (Bullet3[i].collision(TreasureMaker[j])) 
                             {
+                                audio.play();
                                 Bullet3[i].width = 0;
                                 Bullet3[i].height = 0;
                                 Bullet3[i].y = -500;
@@ -1936,6 +2070,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1957,6 +2092,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1978,6 +2114,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -1998,6 +2135,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2019,6 +2157,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2039,6 +2178,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2060,6 +2200,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2080,6 +2221,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2100,6 +2242,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2120,6 +2263,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2148,6 +2292,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2175,6 +2320,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2205,6 +2351,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2232,6 +2379,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2260,6 +2408,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2286,6 +2435,7 @@
                                 Bullet4[i].width = 0;
                                 Bullet4[i].height = 0;
                                 Bullet4[i].y = -500;
+                                audio.play();
                             }
                         }
                     //Boss──1
@@ -2294,6 +2444,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2310,6 +2461,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2326,6 +2478,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2342,6 +2495,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2358,6 +2512,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2374,6 +2529,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2390,6 +2546,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2406,6 +2563,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2422,6 +2580,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2438,6 +2597,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2454,6 +2614,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
@@ -2472,6 +2633,7 @@
                                 if (Bullet4h[i] >= 0)
                                 {
                                     Bullet4h[i] -= 1;
+                                    audio.play();
                                 }
                                 else
                                 {
