@@ -68,6 +68,8 @@
                 DownBtn = new object(100, 100, "./images/downbutton.png", 70, 550, "image");
                 LeftBtn = new object(100, 100, "./images/leftbutton.png", 10, 500, "image");
                 RightBtn = new object(100, 100, "./images/rightbutton.png", 130, 500, "image");
+                EyeBtn = new object(30, 30, "./images/view.png", 8, 75, "image");
+                eye = 0;
                 ShieldBtn = new object(100, 100, "./images/shieldbutton.png", 230, 550, "image");
                 ShieldUse = new object(210, 210, "./images/shielduse2.png", -1000, -1000, "image");
                 ShieldUseC = new object(200, 200, "rgba(0,0,0,0)", -1000, -1000);
@@ -2921,12 +2923,42 @@
                     if (RightBtn.clicked()) {
                         move(Player,'right',4);
                     }
+                    if (EyeBtn.clicked()) 
+                    {
+                        if(eye==0)
+                        {
+                            eye = 1;
+                        }
+                        else
+                        {
+                            eye = 0;
+                        }
+                    }
+                    if (eye==1)
+                    {
+                        UpBtn.image.src="./images/circle.png";
+                        DownBtn.image.src="./images/circle.png";
+                        LeftBtn.image.src="./images/circle.png";
+                        RightBtn.image.src="./images/circle.png";
+                        EyeBtn.image.src="./images/hidden.png";
+                        ShieldBtn.image.src="./images/circle.png";
+                    }
+                    else
+                    {
+                        UpBtn.image.src="./images/upbutton.png";
+                        DownBtn.image.src="./images/downbutton.png";
+                        LeftBtn.image.src="./images/leftbutton.png";
+                        RightBtn.image.src="./images/rightbutton.png";
+                        EyeBtn.image.src="./images/view.png";
+                        ShieldBtn.image.src="./images/shieldbutton.png";
+                    }
                     Player.newPosition();
                     Player.newShow();
                     UpBtn.newShow();
                     DownBtn.newShow();
                     LeftBtn.newShow();
                     RightBtn.newShow();
+                    EyeBtn.newShow();
                     ShieldBtn.newShow();
 
                     //敵人
